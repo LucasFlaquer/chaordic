@@ -1,0 +1,32 @@
+{
+  "name": "bootgulp",
+  "version": "1.0.0",
+  "description": "boot inicial do gulp para agilizar o desenvolvimento front end",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "cssnano": "^4.1.8",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-notify": "^3.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
+}
