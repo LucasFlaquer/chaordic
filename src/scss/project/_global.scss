@@ -6,6 +6,15 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: #eee;
+// body {
+// 	background-color: #eee;
+// }
+.main {
+	height: 100vh;
+	padding: 15px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	background-image: url("../samples/background-home.jpg");
+	background-size: cover;
 }
