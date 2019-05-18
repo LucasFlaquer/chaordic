@@ -1,5 +1,3 @@
-<!-- template base para iniciar o desenvolvimento do site -->
-<!-- Já inclui os scripts base do js e do css assim como as meta tags basicas para iniciar -->
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
@@ -7,10 +5,26 @@
 	{{> head-metatags}}
 </head>
 <body>
-	<main id="main">
-		<p></p>
-		<p></p>
+	{{> org-header}}
+	<main id="main" class="main">
+		<div class="short-link">
+			<h1 class="short-link--title">Encurte seus Links</h1>
+			<p class="short-link--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque minima ea ipsum dolorum similique eveniet. Provident nisi vel doloremque accusamus veniam, voluptatem repellendus eum quis hic perspiciatis tempore laboriosam nobis?</p>
+			<form class="short-link--form">
+				<input type="text">
+				<button>Encurtar</button>
+			</form>
+		</div>
 	</main>
+	<section class="section top-five">
+		<h2 class="top-five--title">TOP 5</h2>
+		<ul class="top-five--list">
+			<li class="top-five--item">
+				<span class="top-five--link">http------</span>
+				<span class="top-five--number">884884</span>
+			</li>
+		</ul>
+	</section>
 	{{> footer-scripts}}
 </body>
 </html>
