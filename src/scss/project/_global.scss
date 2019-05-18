@@ -10,7 +10,7 @@
 // 	background-color: #eee;
 // }
 .main {
-	height: 100vh;
+	height: calc(100vh - 50px);
 	padding: 15px;
 	display: flex;
 	justify-content:center;
