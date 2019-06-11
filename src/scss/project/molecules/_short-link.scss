@@ -3,8 +3,9 @@
 	color: $white;
 	text-align: center;
 	
-	&--title {
+	.section__title {
 		font-size: 4rem;
+		color: $white;
 
 	}
 	&--text {

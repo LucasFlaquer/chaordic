@@ -18,3 +18,15 @@
 	background-image: url("../samples/background-home.jpg");
 	background-size: cover;
 }
+.section {
+	&__title {
+		font-size: 4rem;
+		color: $white;
+
+		&--red {
+			font-size: 3.2rem;
+			color: $dark-red;
+		}
+	}
+
+}
