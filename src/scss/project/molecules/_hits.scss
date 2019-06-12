@@ -1,0 +1,22 @@
+.hits {
+	padding: 35px 15px;
+	background-color: #bbb;
+	position: relative;
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 35px 37.5px 0 37.5px;
+		border-color: #fff transparent transparent transparent;
+	}
+	.section__title {
+		text-align: center;
+		margin-top: 30px;
+	}
+}
