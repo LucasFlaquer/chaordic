@@ -1,7 +1,11 @@
 .hits {
 	padding: 35px 15px;
-	background-color: #bbb;
+	background-color: #ccc;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	
 	&:before {
 		content: '';
@@ -18,5 +22,17 @@
 	.section__title {
 		text-align: center;
 		margin-top: 30px;
+	}
+	&__box {
+    padding: 15px;
+		background-color: white;
+    border : 1px solid darken($gray, 5);
+    border-radius: 5px;
+		
+		span {
+      color: $dark-red;
+      font-size: 20px;
+      font-weight: bold;
+		}
 	}
 }
