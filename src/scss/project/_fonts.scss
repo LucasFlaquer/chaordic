@@ -1,1 +1,23 @@
-//put your fonts here
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Black.ttf);
+  src: url(../fonts/Roboto-BlackItalic.ttf);
+  src: url(../fonts/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto-BoldItalic.ttf);
+  src: url(../fonts/Roboto-Light.ttf);
+  src: url(../fonts/Roboto-LightItalic.ttf);
+  src: url(../fonts/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto-MediumItalic.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-RegularItalic.ttf);
+  src: url(../fonts/Roboto-Thin.ttf);
+  src: url(../fonts/Roboto-ThinItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Slab';
+  src: url(../fonts/RobotoSlab-Bbold.ttf);
+  src: url(../fonts/RobotoSlab-Light.ttf);
+  src: url(../fonts/RobotoSlab-Regular.ttf);
+  src: url(../fonts/RobotoSlab-Thin.ttf);
+}
