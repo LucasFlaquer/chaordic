@@ -6,9 +6,10 @@
 	box-sizing: border-box;
 }
 
-// body {
-// 	background-color: #eee;
-// }
+body {
+	font-family: Roboto;
+	
+}
 .main {
 	height: calc(100vh - 50px);
 	padding: 15px;
@@ -20,7 +21,8 @@
 }
 .section {
 	&__title {
-		font-size: 4rem;
+		font-family: 'Roboto-Slab Bold', cursive;
+		font-size: 3.5rem;
 		color: $white;
 
 		&--red {
