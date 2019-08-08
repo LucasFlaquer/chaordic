@@ -22,9 +22,9 @@
       width: 30px;
       padding: 8px;
       text-align: center;
-      color: white;
+      color: $white;
       text-decoration: none;
-      background-color: #777;
+      background-color: $gray;
       border-radius: 50%;
 
       &:first-child {
@@ -32,7 +32,7 @@
       }
       
       &:hover {
-        background-color: darken(#777, 10%);
+        background-color: darken($gray, 10%);
       }
     }
   }

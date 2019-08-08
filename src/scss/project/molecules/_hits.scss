@@ -1,6 +1,6 @@
 .hits {
 	padding: 35px 15px;
-	background-color: #eee;
+	background-color: $light-gray;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -25,7 +25,7 @@
 		text-transform: uppercase;
 	}
 	&__number {
-		border: 1px solid #eee;
+		border: 1px solid $light-gray;
 		background: $white;
 		padding: 10px;
 		span {
@@ -35,7 +35,7 @@
 		}
 	}
 	&__sub-title {
-		color: #777;
+		color: $gray;
 		font-weight: bold;
 	}
 }
