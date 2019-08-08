@@ -31,15 +31,17 @@
 				color: $form-color;
 			}
 		}
-		.btn-link {
-			background: $form-color;
-			font-weight: bold;
-			color: $white;	
+		.btn {
+			padding: 8px;
 			border-radius: 0;
 			margin-left: 5px;
 			font-size: 18px;
 			text-transform: uppercase;
 			width: 130px;
+			background: $form-color;
+			font-weight: bold;
+			color: $white;
+			border: transparent;	
 			&:hover {
 				text-decoration: none;
 			}
