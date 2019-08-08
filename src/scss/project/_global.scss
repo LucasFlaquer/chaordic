@@ -33,5 +33,16 @@ body {
 			color: $dark-red;
 		}
 	}
+}
 
+@media (max-width: 575px) {
+	.section {
+		padding: {
+			left: 15px;
+			right: 15px;
+		}
+		&__title {
+			font-size: 2.2rem;
+		}
+	}
 }
