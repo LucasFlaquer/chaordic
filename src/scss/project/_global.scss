@@ -22,11 +22,13 @@ body {
 }
 .section {
 	&__title {
+		margin-bottom: 15px;
 		font-family: 'Roboto-Slab Bold', cursive;
 		font-size: 3.5rem;
 		color: $white;
 
 		&--red {
+			font-family: 'Roboto-Slab Regular';
 			font-size: 3.2rem;
 			color: $dark-red;
 		}

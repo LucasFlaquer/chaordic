@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
   LinksUrl()
   .then(function(response) {
     renderLinks(orderLinks(response));
-    sumHits(response);
   })
   .catch(function(error) {
     console.log(error);
@@ -58,12 +57,4 @@ function renderLinks(links) {
     itemEl.appendChild(hitsEl);
     listEl.appendChild(itemEl);    
   }
-}
-function sumHits(links) {
-  var hitsEl = document.querySelector('.hits__number span');
-  var total = 0;
-  links.map(function(link) {
-    total+= link.hits;
-  });
-  hitsEl.innerHTML = total;
 }
