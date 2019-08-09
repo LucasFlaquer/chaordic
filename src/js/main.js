@@ -1,4 +1,7 @@
-var listEl = document.querySelector('.top-five--list');
+const listEl = document.querySelector('.top-five--list');
+const formEl = document.getElementById('short-link');
+const input = document.querySelector('#short-link input');
+const button = document.querySelector('#short-link button');
 var LinksUrl = function() {
   return new Promise(function(resolve, reject) {
     var xhr = new XMLHttpRequest();
@@ -24,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
   .catch(function(error) {
     console.log(error);
   });
-
 });
 
 function orderLinks(links) {
@@ -57,4 +59,57 @@ function renderLinks(links) {
     itemEl.appendChild(hitsEl);
     listEl.appendChild(itemEl);    
   }
+}
+formEl.onsubmit = event => {
+  event.preventDefault();
+  let input = document.querySelector('#short-link input');
+  let button = document.querySelector('#short-link button');
+  if (input.value === '') return;
+  input.classList.add('hide');
+  button.classList.add('hide');
+  let random = Math.random().toString(36).substr(2, 3);
+  console.log("random", random);
+
+  input.value = `http://ch.dc/${random}`;
+  button.innerHTML = 'Copiar';
+  button.removeAttribute('type');
+  button.setAttribute('onclick', 'copyLink()');
+  input.classList.remove('hide');
+  button.classList.remove('hide');
+  input.classList.add('show');
+  button.classList.add('show');
+  setTimeout(() => {
+    input.classList.remove('show');
+  } , 1000);
+  button.classList.remove('show');
+  input.parentElement.classList.toggle('shorted');
+    
+  let clear = document.createElement('span');
+  clear.appendChild(document.createTextNode('\u00D7'));
+  clear.setAttribute('class', 'clear');
+  input.parentElement.appendChild(clear);
+  clear.setAttribute('id', 'clear-field');
+  clear.setAttribute('onclick', `clearfield('${clear.id}')`);
+};
+
+
+function clearfield(id) {
+  console.log('foashdfpihadfps');
+  document.getElementById(id).remove();
+  input.parentElement.classList.remove('shorted');
+  input.classList.add('hide');
+  input.classList.remove('hide');
+  input.classList.add('show');
+  input.classList.remove('show');
+  button.innerHTML = 'Encurtar';
+  button.removeAttribute('onclick');
+  button.setAttribute('type','submit');
+  input.value = '';
+
+}
+function copyLink() {
+  clearfield('clear-field');
+  input.select();
+  document.execCommand("copy");
+  alert("Este link foi copiado com sucesso: " + input.value);
 }
