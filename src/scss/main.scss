@@ -1,5 +1,5 @@
 @import "setup";
-@import "node_modules/bootstrap/scss/bootstrap";
+// @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/font-awesome/scss/font-awesome";
 
 
@@ -7,6 +7,7 @@
 @import "project/fonts";
 @import "project/global";
 @import "project/organisms/header";
+@import "project/organisms/footer";
 @import "project/molecules/short-link";
 @import "project/molecules/top-five";
 @import "project/molecules/hits";

@@ -1,1 +1,17 @@
-//put your fonts here
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Roboto-Slab Regular';
+  src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto-Slab Bold';
+  src: url(../fonts/RobotoSlab-Bold.ttf);
+}

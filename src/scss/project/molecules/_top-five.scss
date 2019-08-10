@@ -3,8 +3,13 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 130px 0;
-	
+	padding: {
+		top: 30px;
+		bottom: 30px;	
+	}
+	.section__title {
+		font-weight: normal;
+	}
 	&--list {
 		padding-left: 0;
 		list-style: none;
@@ -14,7 +19,9 @@
 	}
 	&--link {
 		color: $dark-red;
+		font-family: 'Roboto Bold';
 		font-weight: bold;
+		text-decoration: none;
 
 	}
 	&--number {

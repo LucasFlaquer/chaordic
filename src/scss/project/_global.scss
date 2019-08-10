@@ -6,9 +6,11 @@
 	box-sizing: border-box;
 }
 
-// body {
-// 	background-color: #eee;
-// }
+body {
+	margin: 0;
+	font-family: Roboto;
+	
+}
 .main {
 	height: calc(100vh - 50px);
 	padding: 15px;
@@ -20,13 +22,27 @@
 }
 .section {
 	&__title {
-		font-size: 4rem;
+		margin-bottom: 15px;
+		font-family: 'Roboto-Slab Bold', cursive;
+		font-size: 3.5rem;
 		color: $white;
 
 		&--red {
+			font-family: 'Roboto-Slab Regular';
 			font-size: 3.2rem;
 			color: $dark-red;
 		}
 	}
+}
 
+@media (max-width: 575px) {
+	.section {
+		padding: {
+			left: 15px;
+			right: 15px;
+		}
+		&__title {
+			font-size: 2.2rem;
+		}
+	}
 }

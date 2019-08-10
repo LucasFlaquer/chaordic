@@ -1,11 +1,11 @@
 .hits {
 	padding: 35px 15px;
-	background-color: #ccc;
+	background-color: $light-gray;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	
 	&:before {
 		content: '';
@@ -22,6 +22,21 @@
 	.section__title {
 		text-align: center;
 		margin-top: 30px;
+		text-transform: uppercase;
+	}
+	&__number {
+		border: 1px solid $light-gray;
+		background: $white;
+		padding: 10px;
+		span {
+			color: $dark-red;
+			font-size: 35px;
+			font-family: 'Roboto-Slab Regular';
+		}
+	}
+	&__sub-title {
+		color: $gray;
+		font-weight: bold;
 	}
 	&__box {
     padding: 15px;
