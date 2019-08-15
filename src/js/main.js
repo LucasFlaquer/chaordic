@@ -68,8 +68,6 @@ formEl.onsubmit = event => {
   input.classList.add('hide');
   button.classList.add('hide');
   let random = Math.random().toString(36).substr(2, 3);
-  console.log("random", random);
-
   input.value = `http://ch.dc/${random}`;
   button.innerHTML = 'Copiar';
   button.removeAttribute('type');
@@ -83,7 +81,6 @@ formEl.onsubmit = event => {
   } , 1000);
   button.classList.remove('show');
   input.parentElement.classList.toggle('shorted');
-    
   let clear = document.createElement('span');
   clear.appendChild(document.createTextNode('\u00D7'));
   clear.setAttribute('class', 'clear');
@@ -94,7 +91,6 @@ formEl.onsubmit = event => {
 
 
 function clearfield(id) {
-  console.log('foashdfpihadfps');
   document.getElementById(id).remove();
   input.parentElement.classList.remove('shorted');
   input.classList.add('hide');
@@ -108,8 +104,8 @@ function clearfield(id) {
 
 }
 function copyLink() {
-  clearfield('clear-field');
   input.select();
   document.execCommand("copy");
   alert("Este link foi copiado com sucesso: " + input.value);
+  clearfield('clear-field');
 }
